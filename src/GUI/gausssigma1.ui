@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GaussSigma</class>
+ <widget class="QWidget" name="GaussSigma">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>230</width>
+    <height>68</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sigma</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Выберете параметр</string>
+   </property>
+   <widget class="QPushButton" name="btnOk">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>20</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OK</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="sigmaBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="decimals">
+     <number>3</number>
+    </property>
+    <property name="minimum">
+     <double>0.300000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>5.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>0.001000000000000</double>
+    </property>
+    <property name="value">
+     <double>0.300000000000000</double>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

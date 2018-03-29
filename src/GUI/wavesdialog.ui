@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>wavesDialog</class>
+ <widget class="QDialog" name="wavesDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>279</width>
+    <height>126</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Эффект &quot;Волны&quot;</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="gui.qrc">
+    <normaloff>:/GUI/Resources/mainicon.png</normaloff>:/GUI/Resources/mainicon.png</iconset>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>261</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Введите параметры:</string>
+   </property>
+   <widget class="QPushButton" name="btnOk">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>20</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ОК</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCancel">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>50</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Отмена</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="amplitudeXBox">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>20</y>
+      <width>62</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-100.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>3.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>4.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="lengthBox">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>80</y>
+      <width>62</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>3.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>50.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>3.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Амплитуда по X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Амплитуда по Y</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Длина волны</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="amplitudeYBox">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>50</y>
+      <width>62</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>-100.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>1050.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>3.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>4.000000000000000</double>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="gui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

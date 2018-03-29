@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>rotateDialog</class>
+ <widget class="QDialog" name="rotateDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>189</width>
+    <height>99</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Поворот</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="gui.qrc">
+    <normaloff>:/GUI/Resources/mainicon.png</normaloff>:/GUI/Resources/mainicon.png</iconset>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>171</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Введите угол поворота</string>
+   </property>
+   <widget class="QPushButton" name="btnOk">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>20</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OK</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCancel">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>50</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Отмена</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="angleBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="suffix">
+     <string>°</string>
+    </property>
+    <property name="maximum">
+     <number>360</number>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="gui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

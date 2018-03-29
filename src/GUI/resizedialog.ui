@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>resizeDialog</class>
+ <widget class="QDialog" name="resizeDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>248</width>
+    <height>97</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Масштабирование</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="gui.qrc">
+    <normaloff>:/GUI/Resources/mainicon.png</normaloff>:/GUI/Resources/mainicon.png</iconset>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>231</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Введите коэффициент масштабирования</string>
+   </property>
+   <widget class="QPushButton" name="btnOk">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OK</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCancel">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>50</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Отмена</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="coeffBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>71</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <double>0.200000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>4.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>0.200000000000000</double>
+    </property>
+    <property name="value">
+     <double>1.500000000000000</double>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="gui.qrc"/>
+ </resources>
+ <connections/>
+</ui>
